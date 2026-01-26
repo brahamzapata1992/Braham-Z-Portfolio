@@ -9,65 +9,105 @@ import {
   Server, 
   Box,
   Braces,
-  Cloud
+  Cloud,
+  MonitorSmartphone,
+  PenTool,
+  Lock
 } from 'lucide-react';
 
 const About = () => {
   const handleDownloadCV = () => {
-    alert('Función de descarga de CV - Agrega tu archivo CV.pdf en la carpeta public');
-  };
+  window.open('https://rxresu.me/brahamzapata1992/resume', '_blank');
+};
 
   const frontendSkills = [
-    { name: 'React', icon: Code2 },
-    { name: 'JavaScript', icon: FileCode },
-    { name: 'TypeScript', icon: FileCode },
     { name: 'HTML/CSS', icon: Layers },
+    { name: 'React', icon: Code2 },
+    { name: 'JavaScript', icon: FileCode },    
     { name: 'Tailwind CSS', icon: Layers },
-    { name: 'Next.js', icon: Code2 },
+    { name: 'Responsive Design', icon: MonitorSmartphone },
+    { name: 'Figma', icon: PenTool },
   ];
 
   const backendSkills = [
-    { name: 'Node.js', icon: Server },
+    { name: 'Java', icon: Braces },
+    { name: 'Spring Boot', icon: Server },
+    { name: 'REST APIs', icon: Cloud },
+    { name: 'SQL', icon: Database },
     { name: 'Python', icon: Braces },
-    { name: 'MongoDB', icon: Database },
-    { name: 'PostgreSQL', icon: Database },
-    { name: 'Express', icon: Box },
-    { name: 'FastAPI', icon: Cloud },
+    { name: 'Authentication', icon: Lock },
+    { name: 'CRUD Operations', icon: Database },
   ];
 
-  const experiences = [
-    {
-      type: 'work',
-      year: '2018 - Present',
-      title: 'Senior Web Developer',
-      company: 'Envato',
-      description: 'Developing web applications and user interfaces using modern frameworks.',
-    },
-    {
-      type: 'work',
-      year: '2013 - 2018',
-      title: 'UI/UX Designer',
-      company: 'Themeforest',
-      description: 'Designing user interfaces and experiences for web applications.',
-    },
-  ];
+    const experiences = [
+      {
+        type: 'work',
+        year: '2023 - 2024',
+        title: 'E-commerce Full Stack Project',
+        company: 'Digital House',
+        description:
+          'Developed a full-stack e-commerce platform for renting musical instruments, including backend, database, and frontend. The application was fully responsive and optimized for mobile devices, with an intuitive user interface that allows users to search and rent products efficiently.',
+      },
+      {
+        type: 'work',
+        year: '2021 - 2023',
+        title: 'Full Stack Developer',
+        company: 'Digital House',
+        description:
+          'Built responsive web applications using JavaScript, React, and backend technologies. Worked with SQL and NoSQL databases, focusing on performance, security, and user experience. Constantly learning and applying best practices in full stack development.',
+      },
+      {
+        type: 'work',
+        year: '2016 - 2017',
+        title: 'Mechanical Engineering Intern',
+        company: 'IMAL – Colombia',
+        description:
+          'Contributed to the maintenance department by designing mechanical parts and developing a Visual Basic program to analyze operator downtime as part of a SMED initiative. Supported process optimization efforts to improve operational efficiency.',
+      },
+    ];
 
-  const education = [
-    {
-      type: 'education',
-      year: '2015',
-      title: 'Engineering Degree',
-      institution: 'Oxford University',
-      description: 'Computer Science and Engineering.',
-    },
-    {
-      type: 'education',
-      year: '2012',
-      title: 'Bachelor Degree',
-      institution: 'Cambridge University',
-      description: 'Software Engineering fundamentals.',
-    },
-  ];
+    const education = [
+      {
+        type: 'education',
+        year: '2024 - Present',
+        title: 'Software Engineering',
+        institution: 'Politécnico Grancolombiano',
+        description:
+          'Focused on software design, programming, algorithms, data structures, and software architecture. Training emphasizes project management, teamwork, and the development of scalable, high-quality software solutions.',
+      },
+      {
+        type: 'education',
+        year: 'Jun 2025 - Present',
+        title: 'Python Senior AI – Master Path in Real-World Development',
+        institution: 'Academia Dev Senior',
+        description:
+          'Advanced Python program focused on real-world development and artificial intelligence concepts. The course emphasizes practical problem-solving, application development, and the use of Python for intelligent systems.',
+      },
+      {
+        type: 'education',
+        year: '2021 - 2023',
+        title: 'Full Stack Web Development (Bootcamp)',
+        institution: 'Digital House',
+        description:
+          'Intensive project-based training focused on building full stack web applications using JavaScript, React, backend technologies, and relational and non-relational databases. Emphasis on best practices, teamwork, and real-world development workflows.',
+      },
+      {
+        type: 'education',
+        year: '2019 - 2021',
+        title: 'English Course (B2)',
+        institution: 'ICT – Georgia',
+        description:
+          'Achieved B2 English level, strengthening professional and everyday communication skills. This training enabled confident interaction in technical and work-related environments.',
+      },
+      {
+        type: 'education',
+        year: '2010 - 2016',
+        title: 'Mechanical Engineering',
+        institution: 'Universidad Libre de Colombia',
+        description:
+          'Acquired strong foundations in system design, maintenance, and automation. Developed problem-solving skills, teamwork abilities, and an ethical, sustainable approach to engineering challenges.',
+      },
+    ];
 
   return (
     <div className="min-h-screen px-4 py-20 pb-24 md:pb-8">
@@ -87,19 +127,19 @@ const About = () => {
             <div className="space-y-3">
               <div className="flex justify-between py-2 border-b border-gray-200 dark:border-gray-700">
                 <span className="font-medium text-gray-600 dark:text-gray-400">First Name:</span>
-                <span className="text-gray-900 dark:text-white">Steve</span>
+                <span className="text-gray-900 dark:text-white">Braham</span>
               </div>
               <div className="flex justify-between py-2 border-b border-gray-200 dark:border-gray-700">
                 <span className="font-medium text-gray-600 dark:text-gray-400">Last Name:</span>
-                <span className="text-gray-900 dark:text-white">Milner</span>
+                <span className="text-gray-900 dark:text-white">Zapata</span>
               </div>
               <div className="flex justify-between py-2 border-b border-gray-200 dark:border-gray-700">
                 <span className="font-medium text-gray-600 dark:text-gray-400">Age:</span>
-                <span className="text-gray-900 dark:text-white">27 Years</span>
+                <span className="text-gray-900 dark:text-white">33 Years</span>
               </div>
               <div className="flex justify-between py-2 border-b border-gray-200 dark:border-gray-700">
                 <span className="font-medium text-gray-600 dark:text-gray-400">Nationality:</span>
-                <span className="text-gray-900 dark:text-white">Tunisian</span>
+                <span className="text-gray-900 dark:text-white">Colombian</span>
               </div>
             </div>
             <div className="space-y-3">
@@ -109,15 +149,15 @@ const About = () => {
               </div>
               <div className="flex justify-between py-2 border-b border-gray-200 dark:border-gray-700">
                 <span className="font-medium text-gray-600 dark:text-gray-400">Address:</span>
-                <span className="text-gray-900 dark:text-white">Tunis</span>
+                <span className="text-gray-900 dark:text-white">Atlanta GA</span>
               </div>
               <div className="flex justify-between py-2 border-b border-gray-200 dark:border-gray-700">
                 <span className="font-medium text-gray-600 dark:text-gray-400">Phone:</span>
-                <span className="text-gray-900 dark:text-white">+21621184010</span>
+                <span className="text-gray-900 dark:text-white">+1 470-3831727</span>
               </div>
               <div className="flex justify-between py-2 border-b border-gray-200 dark:border-gray-700">
                 <span className="font-medium text-gray-600 dark:text-gray-400">Email:</span>
-                <span className="text-gray-900 dark:text-white">you@mail.com</span>
+                <span className="text-gray-900 dark:text-white">brahamzapata1992@gmail.com</span>
               </div>
             </div>
           </div>

@@ -19,7 +19,7 @@ const Home = () => {
                 Braham Zapata
               </span>
             </h1>
-            <p className="text-xl text-gray-600 dark:text-gray-400">
+            <p className="text-xl text-gray-600 dark:text-white">
               SOFTWARE ENGINEER
             </p>
             <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
@@ -45,9 +45,9 @@ const Home = () => {
             {/* Desktop: imagen con bordes redondeados */}
             <div className="hidden md:block relative w-full h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/src/img/perfil.JPG"
-                alt="Profile"
-                className="w-full h-full object-cover"
+                src="https://res.cloudinary.com/dazaq6guo/image/upload/v1769395722/perfil_j7eqoh.png"
+                alt="Profilee"
+                className="w-full h-full object-cover object-[50%_20%]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#F5A623]/20 to-transparent" />
             </div>
@@ -56,8 +56,8 @@ const Home = () => {
             <div className="md:hidden flex justify-center">
               <div className="relative w-64 h-64 rounded-full overflow-hidden shadow-2xl ring-4 ring-[#F5A623]/30">
                 <img
-                  src="/src/img/perfil.JPG"
-                  alt="Profile"
+                  src="https://res.cloudinary.com/dazaq6guo/image/upload/v1769395722/perfil_j7eqoh.png"
+                  alt="Profilee"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#F5A623]/20 to-transparent" />

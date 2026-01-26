@@ -39,7 +39,7 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-gray-900 dark:text-white">Email</h4>
-                <p className="text-gray-600 dark:text-gray-400">you@mail.com</p>
+                <p className="text-gray-600 dark:text-gray-400">brahamzapata1992@gmail.com</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
@@ -48,7 +48,7 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-gray-900 dark:text-white">Phone</h4>
-                <p className="text-gray-600 dark:text-gray-400">+216 21 18 40 10</p>
+                <p className="text-gray-600 dark:text-gray-400">+1 470-3831727</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
@@ -57,14 +57,14 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-gray-900 dark:text-white">Location</h4>
-                <p className="text-gray-600 dark:text-gray-400">Tunis, Tunisia</p>
+                <p className="text-gray-600 dark:text-gray-400">Atlanta, GA</p>
               </div>
             </div>
             <div className="pt-6">
               <h4 className="font-semibold text-gray-900 dark:text-white mb-4">Follow Me</h4>
               <div className="flex space-x-4">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/brahamzapata1992"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-gray-200 dark:bg-gray-800 rounded-lg flex items-center justify-center hover:bg-[#F5A623] hover:text-white transition-colors"
@@ -72,7 +72,7 @@ const Contact = () => {
                   <Github className="w-6 h-6" />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/braham-d-zapata-10726b303/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-gray-200 dark:bg-gray-800 rounded-lg flex items-center justify-center hover:bg-[#F5A623] hover:text-white transition-colors"
