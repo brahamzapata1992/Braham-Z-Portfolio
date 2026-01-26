@@ -16,15 +16,14 @@ const Home = () => {
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white leading-tight">
               I'm{' '}
               <span className="bg-gradient-to-r from-[#F5A623] to-[#FDB03A] bg-clip-text text-transparent">
-                Steve Milner
+                Braham Zapata
               </span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-400">
-              Full Stack Developer & UI/UX Enthusiast
+              SOFTWARE ENGINEER
             </p>
             <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-              I'm a passionate web developer focused on crafting clean, user-friendly experiences. 
-              I am passionate about building excellent software that improves the lives of those around me.
+              I build modern and responsive web applications focused on user experience, using React and backend technologies like Java and Spring Boot, with special attention to design, usability, and scalability in every project.
             </p>
             <div className="flex gap-4">
               <Button 
@@ -46,7 +45,7 @@ const Home = () => {
             {/* Desktop: imagen con bordes redondeados */}
             <div className="hidden md:block relative w-full h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop"
+                src="/src/img/perfil.JPG"
                 alt="Profile"
                 className="w-full h-full object-cover"
               />
@@ -57,7 +56,7 @@ const Home = () => {
             <div className="md:hidden flex justify-center">
               <div className="relative w-64 h-64 rounded-full overflow-hidden shadow-2xl ring-4 ring-[#F5A623]/30">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop"
+                  src="/src/img/perfil.JPG"
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
