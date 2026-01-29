@@ -22,8 +22,8 @@ const Projects = () => {
       'E-commerce platform for renting musical instruments, featuring product listings, search functionality, and a mobile-first responsive design. Developed as a full stack project with focus on performance and user experience.',
     image: 'https://res.cloudinary.com/dazaq6guo/image/upload/v1769399870/ChatGPT_Image_Jan_25_2026_10_57_12_PM_celm6w.png',
     technologies: ['React', 'JavaScript', 'SQL', 'Spring Boot'],
-    github: 'https://github.com/tu-usuario/music-rent',
-    live: 'https://tu-proyecto-ecommerce.vercel.app',
+    github: 'https://github.com/brahamzapata1992/Proyecto_Final_V2',
+    live: 'https://proyecto-final-v2-seven.vercel.app/',
   },
   {
     id: 3,
