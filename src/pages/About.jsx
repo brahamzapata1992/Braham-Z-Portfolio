@@ -50,6 +50,20 @@ const About = () => {
     },
   ];
 
+  // Full Stack Certificates
+  const fullstackCertificates = [
+    {
+      name: 'Full Stack Web Development',
+      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop',
+      issuer: 'Digital House',
+    },
+    {
+      name: 'MERN Stack Development',
+      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop',
+      issuer: 'Udemy',
+    },
+  ];
+
   const frontendSkills = [
     { name: 'HTML/CSS', icon: Layers },
     { name: 'React', icon: Code2 },
