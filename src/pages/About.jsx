@@ -22,47 +22,59 @@ const About = () => {
     window.open('https://rxresu.me/brahamzapata1992/resume', '_blank');
   };
 
-  // Frontend Certificates
-  const frontendCertificates = [
-    {
-      name: 'React Advanced Certificate',
-      image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=300&fit=crop',
-      issuer: 'Academia Dev Senior',
-    },
-    {
-      name: 'Responsive Web Design',
-      image: 'https://images.unsplash.com/photo-1547658719-da2b51169166?w=400&h=300&fit=crop',
-      issuer: 'freeCodeCamp',
-    },
-  ];
+    // Frontend Certificates
+    const frontendCertificates = [
+      {
+        name: "Curso Definitivo de HTML y CSS",
+        image: "https://res.cloudinary.com/dazaq6guo/image/upload/v1769880720/HTML_-_CSS_Platzy_abri21.png",
+        issuer: "Platzi",
+        year: "2023",
+      },
+      {
+        name: "Curso Básico de JavaScript",
+        image: "https://res.cloudinary.com/dazaq6guo/image/upload/v1769880721/JavaScript_PLatzy_rnklz1.png",
+        issuer: "Platzi",
+        year: "2023",
+      },
+      {
+        name: "Responsive Design: Maquetación Mobile First",
+        image: "https://res.cloudinary.com/dazaq6guo/image/upload/v1769880721/MobileFirs_Platzy_wwdmat.png",
+        issuer: "Platzi",
+        year: "2022",
+      },
+    ];
 
   // Backend Certificates
-  const backendCertificates = [
-    {
-      name: 'Java Spring Boot Professional',
-      image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop',
-      issuer: 'Digital House',
-    },
-    {
-      name: 'REST API Development',
-      image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop',
-      issuer: 'Academia Dev Senior',
-    },
-  ];
+    const backendCertificates = [
+      {
+        name: "Python Junior Developer",
+        image: "https://res.cloudinary.com/dazaq6guo/image/upload/v1769880723/Python_Junior_Developer_tufejq.png",
+        issuer: "Dev Senior (CertiProf)",
+        year: "2026",
+      },
+      {
+        name: "Diplomado en Programación en Java",
+        image: "https://res.cloudinary.com/dazaq6guo/image/upload/v1769880720/Diplomado_Java_pyckqn.png",
+        issuer: "Politécnico de Colombia",
+        year: "2024",
+      },
+      {
+        name: "Programación Orientada a Objetos (OOP)",
+        image: "https://res.cloudinary.com/dazaq6guo/image/upload/v1769880722/OPP_Platzy_jtvz0k.png",
+        issuer: "Platzi",
+        year: "2023",
+      },
+    ];
 
-  // Full Stack Certificates
-  const fullstackCertificates = [
-    {
-      name: 'Full Stack Web Development',
-      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop',
-      issuer: 'Digital House',
-    },
-    {
-      name: 'MERN Stack Development',
-      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop',
-      issuer: 'Udemy',
-    },
-  ];
+      // Full Stack Certificates
+    const fullstackCertificates = [
+      {
+        name: "Professional Developer (1,568 Hours)",
+        image: "https://res.cloudinary.com/dazaq6guo/image/upload/v1769880720/FullStack-Developer-DH_yt0m0n.png",
+        issuer: "Digital House Academy",
+        year: "2024",
+      },
+    ];
 
   const frontendSkills = [
     { name: 'HTML/CSS', icon: Layers },
