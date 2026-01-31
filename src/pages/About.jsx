@@ -16,9 +16,39 @@ import {
 } from 'lucide-react';
 
 const About = () => {
+  const [selectedCertificate, setSelectedCertificate] = useState(null);
+
   const handleDownloadCV = () => {
-  window.open('https://rxresu.me/brahamzapata1992/resume', '_blank');
-};
+    window.open('https://rxresu.me/brahamzapata1992/resume', '_blank');
+  };
+
+  // Frontend Certificates
+  const frontendCertificates = [
+    {
+      name: 'React Advanced Certificate',
+      image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=300&fit=crop',
+      issuer: 'Academia Dev Senior',
+    },
+    {
+      name: 'Responsive Web Design',
+      image: 'https://images.unsplash.com/photo-1547658719-da2b51169166?w=400&h=300&fit=crop',
+      issuer: 'freeCodeCamp',
+    },
+  ];
+
+  // Backend Certificates
+  const backendCertificates = [
+    {
+      name: 'Java Spring Boot Professional',
+      image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop',
+      issuer: 'Digital House',
+    },
+    {
+      name: 'REST API Development',
+      image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop',
+      issuer: 'Academia Dev Senior',
+    },
+  ];
 
   const frontendSkills = [
     { name: 'HTML/CSS', icon: Layers },
