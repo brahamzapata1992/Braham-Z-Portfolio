@@ -321,7 +321,7 @@ const About = () => {
           </div>
 
           {/* Backend Certificates */}
-          <div className="bg-white dark:bg-[#1A1A1A] rounded-2xl shadow-xl p-8">
+          <div className="bg-white dark:bg-[#1A1A1A] rounded-2xl shadow-xl p-8 mb-6">
             <h3 className="text-xl font-bold text-[#F5A623] mb-6 flex items-center">
               <Award className="w-6 h-6 mr-2" />
               Backend Development
@@ -331,6 +331,43 @@ const About = () => {
                 <div
                   key={index}
                   data-testid={`backend-certificate-${index}`}
+                  className="group cursor-pointer"
+                  onClick={() => setSelectedCertificate(cert)}
+                >
+                  <div className="bg-gray-50 dark:bg-[#0F0F0F] rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 hover:border-[#F5A623] transition-all hover:shadow-lg hover:shadow-[#F5A623]/20">
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={cert.image}
+                        alt={cert.name}
+                        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-4">
+                        <span className="text-white text-sm font-medium">Click to view</span>
+                      </div>
+                    </div>
+                    <div className="p-4 text-center">
+                      <h4 className="font-semibold text-gray-900 dark:text-white mb-1 group-hover:text-[#F5A623] transition-colors">
+                        {cert.name}
+                      </h4>
+                      <p className="text-sm text-gray-500 dark:text-gray-400">{cert.issuer}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Full Stack Certificates */}
+          <div className="bg-white dark:bg-[#1A1A1A] rounded-2xl shadow-xl p-8">
+            <h3 className="text-xl font-bold text-[#F5A623] mb-6 flex items-center">
+              <Award className="w-6 h-6 mr-2" />
+              Full Stack Development
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {fullstackCertificates.map((cert, index) => (
+                <div
+                  key={index}
+                  data-testid={`fullstack-certificate-${index}`}
                   className="group cursor-pointer"
                   onClick={() => setSelectedCertificate(cert)}
                 >
