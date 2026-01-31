@@ -1,5 +1,5 @@
-import React from 'react';
-import { Download, Briefcase, GraduationCap } from 'lucide-react';
+import React, { useState } from 'react';
+import { Download, Briefcase, GraduationCap, Award, X } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { 
   Code2, 
