@@ -263,6 +263,120 @@ const About = () => {
           </div>
         </div>
 
+        {/* Certificates Section */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+            My <span className="text-[#F5A623]">Certificates</span>
+          </h2>
+
+          {/* Frontend Certificates */}
+          <div className="bg-white dark:bg-[#1A1A1A] rounded-2xl shadow-xl p-8 mb-6">
+            <h3 className="text-xl font-bold text-[#F5A623] mb-6 flex items-center">
+              <Award className="w-6 h-6 mr-2" />
+              Frontend Development
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {frontendCertificates.map((cert, index) => (
+                <div
+                  key={index}
+                  data-testid={`frontend-certificate-${index}`}
+                  className="group cursor-pointer"
+                  onClick={() => setSelectedCertificate(cert)}
+                >
+                  <div className="bg-gray-50 dark:bg-[#0F0F0F] rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 hover:border-[#F5A623] transition-all hover:shadow-lg hover:shadow-[#F5A623]/20">
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={cert.image}
+                        alt={cert.name}
+                        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-4">
+                        <span className="text-white text-sm font-medium">Click to view</span>
+                      </div>
+                    </div>
+                    <div className="p-4 text-center">
+                      <h4 className="font-semibold text-gray-900 dark:text-white mb-1 group-hover:text-[#F5A623] transition-colors">
+                        {cert.name}
+                      </h4>
+                      <p className="text-sm text-gray-500 dark:text-gray-400">{cert.issuer}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Backend Certificates */}
+          <div className="bg-white dark:bg-[#1A1A1A] rounded-2xl shadow-xl p-8">
+            <h3 className="text-xl font-bold text-[#F5A623] mb-6 flex items-center">
+              <Award className="w-6 h-6 mr-2" />
+              Backend Development
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {backendCertificates.map((cert, index) => (
+                <div
+                  key={index}
+                  data-testid={`backend-certificate-${index}`}
+                  className="group cursor-pointer"
+                  onClick={() => setSelectedCertificate(cert)}
+                >
+                  <div className="bg-gray-50 dark:bg-[#0F0F0F] rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 hover:border-[#F5A623] transition-all hover:shadow-lg hover:shadow-[#F5A623]/20">
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={cert.image}
+                        alt={cert.name}
+                        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-4">
+                        <span className="text-white text-sm font-medium">Click to view</span>
+                      </div>
+                    </div>
+                    <div className="p-4 text-center">
+                      <h4 className="font-semibold text-gray-900 dark:text-white mb-1 group-hover:text-[#F5A623] transition-colors">
+                        {cert.name}
+                      </h4>
+                      <p className="text-sm text-gray-500 dark:text-gray-400">{cert.issuer}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Certificate Modal */}
+        {selectedCertificate && (
+          <div 
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+            onClick={() => setSelectedCertificate(null)}
+            data-testid="certificate-modal"
+          >
+            <div 
+              className="relative bg-white dark:bg-[#1A1A1A] rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-hidden"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                onClick={() => setSelectedCertificate(null)}
+                className="absolute top-4 right-4 z-10 w-10 h-10 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center text-white transition-colors"
+                data-testid="close-modal-btn"
+              >
+                <X className="w-5 h-5" />
+              </button>
+              <img
+                src={selectedCertificate.image}
+                alt={selectedCertificate.name}
+                className="w-full max-h-[60vh] object-contain bg-gray-100 dark:bg-[#0F0F0F]"
+              />
+              <div className="p-6 text-center">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                  {selectedCertificate.name}
+                </h3>
+                <p className="text-[#F5A623]">{selectedCertificate.issuer}</p>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Experience & Education */}
         <div className="bg-white dark:bg-[#1A1A1A] rounded-2xl shadow-xl p-8">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
