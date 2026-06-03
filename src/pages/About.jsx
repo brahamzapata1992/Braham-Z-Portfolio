@@ -47,6 +47,12 @@ const About = () => {
   // Backend Certificates
     const backendCertificates = [
       {
+        name: "Python Backend Developer",
+        image: "https://res.cloudinary.com/dazaq6guo/image/upload/v1780445614/Python_Backend_dev_ozdjss.png",
+        issuer: "Dev Senior (CertiProf)",
+        year: "2026",
+      },
+      {
         name: "Python Junior Developer",
         image: "https://res.cloudinary.com/dazaq6guo/image/upload/v1769880723/Python_Junior_Developer_tufejq.png",
         issuer: "Dev Senior (CertiProf)",
@@ -63,7 +69,7 @@ const About = () => {
         image: "https://res.cloudinary.com/dazaq6guo/image/upload/v1769880722/OPP_Platzy_jtvz0k.png",
         issuer: "Platzi",
         year: "2023",
-      },
+      },      
     ];
 
       // Full Stack Certificates
