@@ -80,6 +80,12 @@ const About = () => {
         issuer: "Digital House Academy",
         year: "2024",
       },
+      {
+        name: "Python Full Stack Developer",
+        image: "https://res.cloudinary.com/dazaq6guo/image/upload/v1783635435/Python_Full_Stack_Developer_m06glb.png",
+        issuer: "Dev Senior",
+        year: "2026",
+      },
     ];
 
   const frontendSkills = [
