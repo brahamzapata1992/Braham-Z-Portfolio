@@ -19,7 +19,7 @@ const About = () => {
   const [selectedCertificate, setSelectedCertificate] = useState(null);
 
   const handleDownloadCV = () => {
-    window.open('https://drive.google.com/file/d/1_xscom_Z6r2CLWOyB99DUrQzVLNJGXzg/view?usp=drive_link', '_blank');
+    window.open('https://drive.google.com/file/d/1sLU1jaU1nuAP1Lg9WDp5ckC4r98QAhCK/view?usp=drive_link', '_blank');
   };
 
     // Frontend Certificates
