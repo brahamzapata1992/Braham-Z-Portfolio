@@ -86,6 +86,12 @@ const About = () => {
         issuer: "Dev Senior",
         year: "2026",
       },
+      {
+        name: "Python Senior Developer",
+        image: "https://res.cloudinary.com/dazaq6guo/image/upload/v1785623428/Python_Senior_Developer_lauwh2.png",
+        issuer: "Dev Senior",
+        year: "2026",
+      },
     ];
 
   const frontendSkills = [
