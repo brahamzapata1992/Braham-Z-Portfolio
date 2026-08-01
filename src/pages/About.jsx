@@ -19,7 +19,7 @@ const About = () => {
   const [selectedCertificate, setSelectedCertificate] = useState(null);
 
   const handleDownloadCV = () => {
-    window.open('https://rxresu.me/brahamzapata1992/resume', '_blank');
+    window.open('https://drive.google.com/file/d/1_xscom_Z6r2CLWOyB99DUrQzVLNJGXzg/view?usp=drive_link', '_blank');
   };
 
     // Frontend Certificates
