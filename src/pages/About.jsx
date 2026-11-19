@@ -19,7 +19,12 @@ const About = () => {
   const [selectedCertificate, setSelectedCertificate] = useState(null);
 
   const handleDownloadCV = () => {
-    window.open('https://drive.google.com/file/d/1sLU1jaU1nuAP1Lg9WDp5ckC4r98QAhCK/view?usp=drive_link', '_blank');
+    const link = document.createElement('a');
+    link.href = '/Braham_Zapata_Resume.pdf';
+    link.download = 'Braham_Zapata_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
   };
 
     // Frontend Certificates
