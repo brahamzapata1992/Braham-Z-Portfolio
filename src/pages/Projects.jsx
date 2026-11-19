@@ -4,6 +4,28 @@ import ProjectCard from '../components/ProjectCard';
 const Projects = () => {
   const projects = [
     {
+      id: 4,
+      title: 'Halo Arch Co.',
+      category: 'Frontend',
+      description:
+        'Bilingual site for an event-decor business with a custom design tool: customers place their photos on three arches at real scale, preview it and get a quote via WhatsApp.',
+      image: '/projects/halo-arch.png',
+      technologies: ['React', 'Vite', 'Tailwind CSS'],
+      github: 'https://github.com/brahamzapata1992/HaloArch_Proyect',
+      live: 'https://halo-arch-proyect.vercel.app/',
+    },
+    {
+      id: 5,
+      title: 'TechStore E-Commerce',
+      category: 'Frontend',
+      description:
+        'Tech e-commerce with product catalog, cart, checkout, login and registration, protected routes and an admin panel to manage products. Payments are simulated.',
+      image: '/projects/techstore.png',
+      technologies: ['React', 'React Router', 'Vite'],
+      github: 'https://github.com/brahamzapata1992/TechShop',
+      live: 'https://tech-shop-cyan.vercel.app/',
+    },
+    {
       id: 1,
       title: 'Dental Clinic Management',
       category: 'Backend',
